@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#161515"
+    tools:context="com.zxp.voicecalculator.MainActivity">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/tv_show"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:textSize="50dp"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:text="0"
+        android:padding="10dp"
+        android:layout_margin="4dp"
+        android:background="#232626"
+        android:lines="1"
+        />
+
+    <LinearLayout
+        android:background="#979ba7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/button"
+        android:text="退位"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="清除"/>
+
+    <Button
+        android:id="@+id/btn_isplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开关播音"/>
+
+</LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:layout_margin="15dp"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
